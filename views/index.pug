@@ -1,0 +1,53 @@
+extends layout
+
+block content
+    #container.web_container
+      #container_pager.web_container_paper
+        #title.web_container_title
+          #divcard.web_container_divcard_fill
+            h2 TITLE
+        #container_nav.web_container_nav
+          #divcard.web_container_divcard
+            nav
+              li
+                button(onclick='showContainer("web_container_hello")') 主页
+              li
+                button(onclick='showContainer("web_container_paper_list")') 文章
+              li
+                button(onclick='showContainer("web_container_paper_search")') 搜索
+              li
+                button(onclick='showContainer("web_container_paper_tage_list")') 标签
+        #container_essay.web_container_essay
+          #divcard.web_container_divcard
+            #web_container_paper
+              #container_essay_in.web_container_essay_in_title
+                #divcard.web_container_divcard2
+                  h2 DOC TITLE
+              #container_essay_in.web_container_essay_in
+                p TEXT
+            #web_container_paper_list
+              #container_essay_in.web_container_essay_in_title
+                #divcard.web_container_divcard2
+                  h2 所有文章
+              #container_essay_in.web_container_essay_in
+                p TEXT
+            #web_container_paper_search
+              #container_essay_in.web_container_essay_in_title
+                #divcard.web_container_divcard2
+                  h2 搜索
+              #container_essay_in.web_container_essay_in
+                p TEXT
+            #web_container_paper_tage_list
+              #container_essay_in.web_container_essay_in_title
+                #divcard.web_container_divcard2
+                  h2 文章标签
+              #container_essay_in.web_container_essay_in
+                p TEXT
+            #web_container_hello
+              #container_essay_in.web_container_essay_in_title
+                #divcard.web_container_divcard2
+                  h2 欢迎！
+              #container_essay_in.web_container_essay_in
+                p TEXT
+      #container_footer.web_container_footer
+        footer About

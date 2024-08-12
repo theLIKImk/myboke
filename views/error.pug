@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  #container.web_container
+    #divcard.web_container_divcard
+      #divcard.web_container_divcard2
+        h2= message + " [" + error.status + "]"
+      #container_essay_in.web_container_essay_in
+        pre #{error.stack}
